@@ -3,7 +3,9 @@ name: Github New Pipeline
 on: [push]
 
 jobs:
+  
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.0
