@@ -1,1 +1,10 @@
+name: Github New Pipeline
 
+on: [push]
+
+jobs:
+  build:
+    steps:
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.0
+          
