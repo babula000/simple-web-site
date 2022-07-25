@@ -45,7 +45,7 @@ jobs:
      needs: [build]
      steps:
        - uses: actions/checkout@v2
-       - uses: ./.github/workflows/second.yml
+       - uses: ./.github/workflows/second.yaml
    
         
        
