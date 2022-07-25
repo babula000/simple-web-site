@@ -39,12 +39,9 @@ jobs:
           Write-Host "Running PowerShell Script"
           Write-Host "PowerShell Version is $PSVersionTable.PSVersion"
   reuse_workflow:
-     runs-on: ubuntu-latest
      if: github.ref_name == 'master'
      needs: [build]
-     steps:
-       - uses: actions/checkout@v2.4.2
-       - uses: ./.github/workflows/second.yaml
+     uses: ./.github/workflows/second.yaml
    
         
        
