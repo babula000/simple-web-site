@@ -34,3 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Run Powershell Script
+        shell: pwsh
+        run: |
+          Write-Host "Running PowerShell Script"
+          $PSTable.Version
+        
+       
