@@ -40,5 +40,11 @@ jobs:
         run: |
           Write-Host "Running PowerShell Script"
           Write-Host "PowerShell Version is $PSVersionTable.PSVersion"
+  reuse_workflow:
+     runs-on: ubuntu-latest
+     needs: [build]
+     steps:
+       - uses: ./.github/workflows/second
+   
         
        
