@@ -39,6 +39,6 @@ jobs:
         shell: pwsh
         run: |
           Write-Host "Running PowerShell Script"
-          $PSTable.Version
+          Write-Host "PowerShell Version is $PSVersionTable.PSVersion"
         
        
