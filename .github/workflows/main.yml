@@ -44,7 +44,7 @@ jobs:
      runs-on: ubuntu-latest
      needs: [build]
      steps:
-       - uses: ./.github/workflows/second
+       - uses: ./.github/workflows/second.yml
    
         
        
