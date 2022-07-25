@@ -1,6 +1,8 @@
 name: Github New Pipeline
 
-on: [push]
+on: 
+  push:
+  workflow_call:
 
 jobs:
   
