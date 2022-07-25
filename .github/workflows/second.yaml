@@ -2,6 +2,7 @@ name: Github New Pipeline
 
 on: 
   push:
+    branches: [master]
   workflow_call:
 
 jobs:
